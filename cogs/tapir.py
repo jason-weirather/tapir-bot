@@ -3,11 +3,13 @@ from .utils import config, checks
 import random
 import discord
 import asyncio
+import sys
 
 class Tapir:
     """the tapir command(s)"""
     
     def __init__(self, bot):
+        sys.exit()
         self.bot = bot
         self.config = config.Config('tapirs.json', loop=bot.loop)
         
